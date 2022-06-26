@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Enjoy on your TV.",
+    "body": "Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.",
+    "image": "https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png",
+    "direction": "row",
+    "id": "1",
+    "padding": "left"
+  },
+  {
+    "title": "Download your shows to watch offline.",
+    "body": "Save your favorites easily and always have something to watch.",
+    "image": "https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg",
+    "direction": "row-reverse",
+    "id": "2",
+    "padding": "right"
+  },
+  {
+    "title": "Watch everywhere.",
+    "body": "Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.",
+    "image": null,
+    "direction": "row",
+    "id": "3",
+    "padding": "left"
+  },
+  {
+    "title": "Create profiles for kids.",
+    "body": "Send kids on adventures with their favorite characters in a space made just for them—free with your membership.",
+    "image": "https://occ-0-4616-2773.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABRUVwm0Th8tURZtHa8QAQoQEK0s2kalECfHtYtFGZ-uckUjl7aHUOilKZVP5joQrLec41raWv_MP0jNW5JYQhcBEfVUlcQqRHcmR.png?r=fcd",
+    "direction": "row-reverse",
+    "id": "4",
+    "padding": "right"
+  }
+]

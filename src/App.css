@@ -1,4 +1,11 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 .App {
+  overflow-x: hidden;
   text-align: center;
 }
 

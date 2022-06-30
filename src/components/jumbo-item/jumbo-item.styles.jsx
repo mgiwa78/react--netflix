@@ -3,11 +3,11 @@ import styled from "styled-components";
 export const JumdoItemContainer = styled.div`
   width: 100vw;
   display: flex;
-  padding: 30px 60px;
+  padding: 40px 60px;
   flex-direction: ${({ direction }) => direction};
   background-color: #000;
-  border-top: solid #222 4px;
-  border-bottom: solid #222 4px;
+  margin: 8px 0;
+
   justify-content: space-between;
   align-items: center;
   text-align: left;

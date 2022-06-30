@@ -3,12 +3,13 @@ import { ReactComponent as NetflixLogo } from "./Netflix-Logo.wine.svg";
 
 export const Logo = styled(NetflixLogo)`
   height: auto;
-  width: 160px;
+  width: 210px;
+  margin: -20px 0;
   box-sizing: border-box;
 `;
 export const NavigationContainer = styled.div`
   width: 100%;
-  padding: 0 50px;
+  padding: 0 40px;
   top: 0;
   position: absolute;
   display: flex;

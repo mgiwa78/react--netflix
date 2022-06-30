@@ -25,7 +25,7 @@ export const SubmitBtn = styled.button`
   height: 100%;
   background-color: #e50914;
   color: white;
-  font-size: 20px;
+  font-size: 30px;
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
 `;

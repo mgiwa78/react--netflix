@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { ReactComponent as NetflixLogo } from "./Netflix-Logo.wine.svg";
 
@@ -6,6 +7,16 @@ export const Logo = styled(NetflixLogo)`
   width: 210px;
   margin: -20px 0;
   box-sizing: border-box;
+`;
+export const NavLink = styled(Link)`
+  text-decoration: none;
+  color: white !important;
+  &:focus {
+    text-decoration: none;
+  }
+  &:active {
+    text-decoration: none;
+  }
 `;
 export const NavigationContainer = styled.div`
   width: 100%;

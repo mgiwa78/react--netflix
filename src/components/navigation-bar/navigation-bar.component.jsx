@@ -1,12 +1,15 @@
 import { ReactComponent as NetflixLogo } from "./Netflix-Logo.wine.svg";
-import { Logo, NavigationContainer } from "./navigation-bar.styles";
+import { Logo, NavigationContainer, NavLink } from "./navigation-bar.styles";
 import { Btn } from "../button/button.styles";
+import { Link } from "react-router-dom";
 
 const NavigationBar = () => {
   return (
     <NavigationContainer>
       <Logo />
-      <Btn>Sign in</Btn>
+      <Btn>
+        <NavLink to="/auth">Sign in</NavLink>
+      </Btn>
     </NavigationContainer>
   );
 };

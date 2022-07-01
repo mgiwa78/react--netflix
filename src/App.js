@@ -1,10 +1,7 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Home from "./components/home/home.component";
 import NavigationBar from "./components/navigation-bar/navigation-bar.component";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Login from "./components/login/login.component";
-import SignUp from "./components/sign-up/sign-up.component";
 import Auth from "./components/login/login.component";
 
 function App() {

@@ -29,7 +29,7 @@ const SignUp = () => {
   console.log(para[`*`]);
   return (
     <SignUpContainer>
-      <FormTitle> Sign in</FormTitle>
+      <FormTitle> Sign Up</FormTitle>
       <SignUpForm>
         <FormInput
           handleChange={handleChange}
@@ -54,14 +54,14 @@ const SignUp = () => {
         />
         <FormInput
           handleChange={handleChange}
-          name="password"
+          name="confirmPassword"
           type="password"
           value={confirmPassword}
           placeholder="Confirm email"
         />
       </SignUpForm>
       <Button height="48px" width="314px">
-        Sign in
+        Sign Up
       </Button>
       {para[`*`] !== "signup" ? (
         <FormBody>New to Netflix? Sign up now.</FormBody>

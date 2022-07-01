@@ -11,8 +11,8 @@ import {
 
 const SignIn = () => {
   const defaultField = {
-    email: "Bean",
-    password: "Bean",
+    email: "",
+    password: "",
   };
   const [formFields, setFormField] = useState(defaultField);
   const { email, password } = formFields;

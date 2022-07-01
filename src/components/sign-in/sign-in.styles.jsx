@@ -4,10 +4,10 @@ import styled from "styled-components";
 export const SignInContainer = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 100px 72px;
+  padding: 50px 72px;
   justify-content: flex-start;
   width: 460px;
-  height: 490px;
+  height: max-content;
   text-align: left;
   background-color: #000000df;
   border-radius: 5px;
@@ -27,7 +27,7 @@ export const FormTitle = styled.h2`
 export const FormBody = styled.p`
   color: white;
   font-size: 15px;
-  margin: 60px 0;
+  margin: 30px 0;
 `;
 export const NavLink = styled(Link)`
   color: white;

@@ -3,11 +3,11 @@ import styled from "styled-components";
 export const SignUpContainer = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 100px 72px;
+  padding: 50px 72px;
   margin-top: 50px;
   justify-content: flex-start;
   width: 460px;
-  height: 600px;
+  height: max-content;
   text-align: left;
   background-color: #000000df;
   border-radius: 5px;

@@ -7,7 +7,6 @@ import {
 } from "./jumbo-item.styles";
 
 const JumboItem = ({ padding, image, title, body, id, direction }) => {
-  console.log(image);
   return (
     <JumdoItemContainer direction={direction}>
       <JumboBox padding={padding}>

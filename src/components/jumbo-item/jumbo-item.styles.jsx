@@ -3,10 +3,11 @@ import styled from "styled-components";
 export const JumdoItemContainer = styled.div`
   width: 100vw;
   display: flex;
-  padding: 40px 60px;
+  padding: 40px 170px;
   flex-direction: ${({ direction }) => direction};
   background-color: #000;
-  margin: 8px 0;
+
+  border-top: solid 6px #222;
 
   justify-content: space-between;
   align-items: center;
@@ -14,7 +15,7 @@ export const JumdoItemContainer = styled.div`
 `;
 
 export const JumboBox = styled.div`
-  width: 50%;
+  width: 45%;
   color: white;
   ${({ padding }) => `padding-${padding}:40px;`}
 `;

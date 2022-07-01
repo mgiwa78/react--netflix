@@ -1,3 +1,4 @@
+import FaqSecction from "../Faq/faq-section.component";
 import Footer from "../footer/footer.component";
 import HomeHeader from "../home-header/home-header.component";
 import JumboItem from "../jumbo-item/jumdo-item.component";
@@ -9,6 +10,7 @@ const Home = () => {
     <HomeContainer>
       <HomeHeader />
       <JumboSection />
+      <FaqSecction />
       <Footer />
     </HomeContainer>
   );

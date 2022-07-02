@@ -11,7 +11,6 @@ export const FaqItemConstiner = styled.div`
 `;
 
 const changeToggle = (prevState) => {
-  console.log(prevState);
   return prevState === true
     ? css`
         display: block;

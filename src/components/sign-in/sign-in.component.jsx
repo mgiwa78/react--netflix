@@ -11,7 +11,7 @@ import {
 } from "./sign-in.styles";
 
 const SignIn = () => {
-  const { age, setage, happyBirthday } = useContext(UserContext);
+  const { age,} = useContext(UserContext);
   const defaultField = {
     email: "",
     password: "",

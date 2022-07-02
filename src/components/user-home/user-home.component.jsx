@@ -1,5 +1,5 @@
 import UserHero from "../user-hero/user-hero.component";
-import { UserHomeContainer, UserHomeHeader } from "./user-home.styles";
+import { UserHomeContainer} from "./user-home.styles";
 
 const UserHome = () => {
   return (

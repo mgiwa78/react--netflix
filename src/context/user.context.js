@@ -2,7 +2,7 @@ import React, { createContext, useState } from "react";
 export const UserContext = createContext();
 
 export const UserProvider = ({ children }) => {
-  const [name, setName] = useState("John Doe");
+  const [name] = useState("John Doe");
   const [age, setAge] = useState(5);
   const happyBirthday = () => setAge(age + 1);
   return (

@@ -2,17 +2,24 @@ import styled from "styled-components";
 
 export const UserHeroContainer = styled.div`
   width: 100%;
-  border: 2px solid black;
-  height: 80vh;
+  height: 85vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
 
   color: white;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.62) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    url(${({ backdrop_path }) => `${backdrop_path}`});
 `;
 export const HeaderViewInfo = styled.div`
+  margin-left: 25px;
   width: 100%;
-  border: 2px solid black;
   height: 50%;
   color: white;
   padding: 30px;
@@ -31,10 +38,17 @@ export const HeaderDescription = styled.div`
   margin-top: 20px;
   text-align: left;
   color: #e6e6e6;
-  font-size: 15px;
+  font-size: 20px;
 
   height: max-content;
 `;
+export const HeaderTitle = styled.div`
+  font-size: 65px;
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 20px;
+`;
+
 export const HeaderBtn = styled.button`
   width: 150px;
   height: 40px;

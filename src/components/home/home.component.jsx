@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Route, Routes } from "react-router";
 import FaqSecction from "../Faq/faq-section.component";
 import Footer from "../footer/footer.component";
@@ -8,6 +9,7 @@ import Login from "../login/login.component";
 import { HomeContainer } from "./home.style";
 
 const Home = () => {
+
   return (
     <HomeContainer>
       <HomeHeader />

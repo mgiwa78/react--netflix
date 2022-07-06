@@ -1,8 +1,7 @@
 import axios from "axios";
-import { useContext, useEffect, useState } from "react";
-import { MovieConstext as MovieContext } from "../../context/movies.context";
+import { useEffect, useState } from "react";
 import MovieSection from "../movie-section/movie-section.component";
-import { API_KEY, requests } from "../request";
+import { requests } from "../request";
 import UserHero from "../user-hero/user-hero.component";
 import { UserHomeContainer } from "./user-home.styles";
 

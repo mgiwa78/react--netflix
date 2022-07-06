@@ -10,14 +10,7 @@ import {
   signOut,
 } from "firebase/auth";
 
-import {
-  collection,
-  doc,
-  getDoc,
-  getDocs,
-  getFirestore,
-  setDoc,
-} from "firebase/firestore";
+import { doc, getDoc, getFirestore, setDoc } from "firebase/firestore";
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyACWN6OVeDO1MzNnjvOyt4LXqZbAl0uuuo",
@@ -37,7 +30,6 @@ const auth = getAuth(app);
 
 export const SignUpWithEmailAndPassword = async (email, password) => {
   const { user } = await createUserWithEmailAndPassword(auth, email, password);
-  const userId = user.uid;
 
   // const querySnapshot = await getDocs(collection(db, `users/${userId}`));
 

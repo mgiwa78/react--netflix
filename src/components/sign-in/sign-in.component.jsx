@@ -1,6 +1,5 @@
-import React, { useContext, useEffect, useState } from "react";
-import { Navigate, useNavigate } from "react-router";
-import { UserContext } from "../../context/user.context";
+import React, { useState } from "react";
+import { useNavigate } from "react-router";
 import Button from "../button/button.component";
 import { SignUserIn } from "../firebase.utils";
 import FormInput from "../form-input/form-input.component";
@@ -14,7 +13,6 @@ import {
 
 const SignIn = () => {
   const Navigate = useNavigate();
-  const { age } = useContext(UserContext);
   const defaultField = {
     email: "",
     password: "",

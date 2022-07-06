@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
+import { Navigate, useNavigate } from "react-router";
 import { UserContext } from "../../context/user.context";
 import Button from "../button/button.component";
 import { SignUserIn } from "../firebase.utils";
@@ -12,6 +13,7 @@ import {
 } from "./sign-in.styles";
 
 const SignIn = () => {
+  const Navigate = useNavigate();
   const { age } = useContext(UserContext);
   const defaultField = {
     email: "",
@@ -25,7 +27,10 @@ const SignIn = () => {
     setFormField({ ...formFields, [name]: value });
   };
 
-  const handleFormSubmit = () => SignUserIn(email, password);
+  const handleFormSubmit = async () => {
+    await SignUserIn(email, password);
+    Navigate("/user");
+  };
 
   // useEffect(() => {
   //   console.log(age);

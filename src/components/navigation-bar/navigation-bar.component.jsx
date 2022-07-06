@@ -5,6 +5,7 @@ import { UserContext } from "../../context/user.context";
 import { useContext, useEffect } from "react";
 import { AuthHandler, SignUserOut } from "../firebase.utils";
 import Button from "../button/button.component";
+import Auth from "../login/login.component";
 
 const NavigationBar = () => {
   const { user, UpdateUser } = useContext(UserContext);
@@ -16,6 +17,9 @@ const NavigationBar = () => {
 
   const SignOuthandler = () => {
     console.log("hi");
+    UpdateUser(null);
+    Navigate("/");
+
     SignUserOut();
   };
   return (

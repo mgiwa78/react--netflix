@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { UserContext } from "../../context/user.context";
 import Button from "../button/button.component";
+import { SignUserIn } from "../firebase.utils";
 import FormInput from "../form-input/form-input.component";
 import {
   FormBody,
@@ -11,7 +12,7 @@ import {
 } from "./sign-in.styles";
 
 const SignIn = () => {
-  const { age,} = useContext(UserContext);
+  const { age } = useContext(UserContext);
   const defaultField = {
     email: "",
     password: "",
@@ -23,9 +24,12 @@ const SignIn = () => {
     const { name, value } = event.target;
     setFormField({ ...formFields, [name]: value });
   };
-  useEffect(() => {
-    console.log(age);
-  }, [age]);
+
+  const handleFormSubmit = () => SignUserIn(email, password);
+
+  // useEffect(() => {
+  //   console.log(age);
+  // }, [age]);
   return (
     <SignInContainer>
       <FormTitle> Sign in</FormTitle>
@@ -43,11 +47,12 @@ const SignIn = () => {
           type="password"
           value={password}
           placeholder="Enter Password"
-        />
+        />{" "}
+        <Button handleClick={handleFormSubmit} height="48px" width="314px">
+          Sign in
+        </Button>
       </SignInForm>
-      <Button height="48px" width="314px">
-        Sign in
-      </Button>
+
       <FormBody>
         New to Netflix? <NavLink to="/auth/signup">Sign up now.</NavLink>
       </FormBody>

@@ -18,7 +18,7 @@ function App() {
             <NavigationBar />
             <Routes>
               <Route element={<Auth />} path="/auth/*"></Route>
-              <Route element={<Home />} path="/"></Route>
+              <Route element={<Home />} path="/*"></Route>
               <Route element={<UserHome />} path="/user"></Route>
             </Routes>
           </UserProvider>

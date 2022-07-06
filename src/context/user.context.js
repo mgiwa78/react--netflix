@@ -2,11 +2,13 @@ import React, { createContext, useState } from "react";
 export const UserContext = createContext();
 
 export const UserProvider = ({ children }) => {
-  const [name] = useState("John Doe");
-  const [age, setAge] = useState(5);
-  const happyBirthday = () => setAge(age + 1);
+  const [user, setSetUser] = useState(5);
+  const UpdateUser = (userState) => {
+    console.log(userState);
+    setSetUser(userState);
+  };
   return (
-    <UserContext.Provider value={{ name, age, happyBirthday }}>
+    <UserContext.Provider value={{ UpdateUser, user }}>
       {children}
     </UserContext.Provider>
   );
